@@ -4,7 +4,7 @@
 
 ## Usage
 
-### Running application
+## Running application
 
-### Running tests
+## Running tests
 
