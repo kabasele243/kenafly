@@ -1,0 +1,26 @@
+{
+  "name": "kenafly",
+  "version": "1.0.0",
+  "description": "vacation booking tour web application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kabasele243/kenafly.git"
+  },
+  "author": "Franck Kabasele",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kabasele243/kenafly/issues"
+  },
+  "homepage": "https://github.com/kabasele243/kenafly#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
