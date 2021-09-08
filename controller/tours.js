@@ -35,21 +35,19 @@ exports.getAllTours = (req, res) => {
 };
 
 exports.getTour = (req, res) => {
-  const id = parseInt(req.params.id);
-  const tour = tours.find(el => el.id === id);
+  const params = req.params.id;
+  const id = parseInt(params);
+  const tour = tours.find((el) => el.id === id);
 
   res.status(200).json({
     status: 'success',
     data: {
       tour,
-  },
+    },
   });
 };
 
 exports.updateTour = (req, res) => {
-  const id = parseInt(req.params.id);
-  const tour = tours.find(el => el.id === id);
-
   res.status(200).json({
     status: 'success',
     data: {
@@ -62,10 +60,9 @@ exports.deleteTour = (req, res) => {
   res.status(204).json({
     status: 'fail',
     data: null,
-  }),
+  });
 };
 
 exports.createTour = (req, res) => {
-
-    res.send('New Tour Created')
-}
+  res.send('New Tour Created');
+};
