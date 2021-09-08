@@ -1,16 +1,15 @@
-
 exports.getAllUsers = (req, res) => {
-    res.send('All User')
-}
+  res.send('All User');
+};
 
 exports.getUser = (req, res) => {
-    res.status(200).json({
-        status: 'success',
-        data: {
-            user : 'This is A User'
-        }
-    })
-}
+  res.status(200).json({
+    status: 'success',
+    data: {
+      user: 'This is A User',
+    },
+}),
+};
 
 exports.createUser = (req, res) => {
     res.status(201).json({
