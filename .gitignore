@@ -52,6 +52,7 @@ build/Release
 node_modules/
 jspm_packages/
 config.env
+con.env
 
 # TypeScript v1 declaration files
 
