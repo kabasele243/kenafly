@@ -11,13 +11,14 @@ router.route('/monthly-plan/:year').get(tour.getMonthlyPlan);
 
 router.route('/').get(auth.protect, tour.getAllTours).post(tour.createTour);
 
-router.route('/tour-stats').get(tour.getTourStats);
-router.route('/monthly-plan/:year').get(tour.getMonthlyPlan);
-
 router
   .route('/:id')
   .get(tour.getTour)
   .patch(tour.updateTour)
-  .delete(tour.deleteTour);
+  .delete(
+    auth.protect,
+    auth.restrictTo('admin', 'lead-guide'),
+    tour.deleteTour
+  );
 
 module.exports = router;
